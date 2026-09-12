@@ -36,14 +36,14 @@ The project is structured to allow the **ML pipeline, firmware, backend, and app
                    │
                    ▼
         ┌─────────────────────┐
-        │   Firebase / Cloud   │
-        │   Real-time Data     │
+        │   Firebase / Cloud  │
+        │   Real-time Data    │
         └──────────┬──────────┘
                    │
           ┌────────┴─────────┐
           ▼                  ▼
  ┌─────────────────┐  ┌─────────────────┐
- │   ML Pipeline   │  │  Farmer App     │
+ │   ML Pipeline   │  │   Farmer App    │
  │                 │  │                 │
  │ Crop Prediction │  │ Monitoring      │
  │ Irrigation      │  │ Recommendations │
@@ -234,7 +234,7 @@ Example:
 }
 ```
 
-### Prediction fields
+### Prediction Fields
 
 | Field             | Description                                    |
 | ----------------- | ---------------------------------------------- |
@@ -253,25 +253,6 @@ ML predictions must remain distinguishable from:
 * System alerts
 
 This allows the application to evolve without tightly coupling it to a particular ML implementation.
-
----
-
-## Development Status
-
-| Component                 | Status                     |
-| ------------------------- | -------------------------- |
-| Project architecture      | 🟢 Defined                 |
-| Application concept       | 🟢 Defined                 |
-| Firebase data integration | 🟡 In development          |
-| ESP32 firmware            | 🟡 In development          |
-| Crop recommendation       | 🟡 ML starter pipeline     |
-| Irrigation guidance       | 🟡 Baseline implementation |
-| Pest-sound classification | 🟡 ML starter pipeline     |
-| Verified ML dataset       | 🔴 Required                |
-| Model evaluation          | 🔴 Pending                 |
-| Full system integration   | 🔴 Pending                 |
-
-The project is under active development. Some components represent **proposed or starter implementations** rather than production-ready functionality.
 
 ---
 
@@ -298,15 +279,3 @@ ReGen Hackathon 2025 · NIT Silchar
 This project is a **prototype/research-oriented precision-farming system** developed for the ReGen Hackathon.
 
 ML recommendations depend on the quality, coverage, and representativeness of the training data. Predictions should therefore be treated as decision-support information rather than a replacement for professional agricultural expertise.
-
----
-
-## Resume / Portfolio Note
-
-When describing this project on a resume or portfolio, use **measured results** rather than proposed capabilities.
-
-For example:
-
-> **IoT-ML Precision Farming** — Developed an ESP32-based precision-farming prototype integrating agricultural sensors, Firebase cloud synchronization, and ML pipelines for crop recommendation, irrigation guidance, and pest-sound classification.
-
-Add model architecture and evaluation metrics only after the corresponding experiments have been completed and are reproducible.
